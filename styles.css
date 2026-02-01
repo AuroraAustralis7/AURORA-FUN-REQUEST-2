@@ -1,1 +1,19 @@
+main {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(221, 188, 147);
+}
 
+#pre1 {
+  font-size: 100px;
+}
+
+nav ul {
+  font-size: large;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  gap: 1ch;
+}
