@@ -3,8 +3,18 @@
   <head>
     <title>Fake Product Page</title>
     <style>
+      a:link {
+        color: red;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: black;
+        background-color: transparent;
+        text-decoration: none;
+      }
       body {
-        background-color: blanchedalmond;
+        background-color: var(--bg-color);
       }
     </style>
     <link rel="stylesheet" href="./styles.css" />
@@ -13,19 +23,40 @@
   <body>
     <nav>
       <ul>
-        <li><a href="https:/google.com">Product</a></li>
-        <li><a href="https:/google.com">Pricing</a></li>
-        <li><a href="https:/google.com">Pricing</a></li>
-        <li><a href="https:/google.com">About Us</a></li>
+        <li><a href="https:/google.com" id="Home">Home Page</a></li>
+        <li><a href="https:/google.com" id="Product">Product</a></li>
+        <li><a href="https:/google.com" id="Pricing">Pricing</a></li>
+        <li><a href="https:/google.com" id="About">About Us</a></li>
       </ul>
     </nav>
 
     <main>
       <section id="Welcome">
-        <h1>Welcome to Origin!</h1>
+        <h1 id="header1">Welcome to Origin!</h1>
         <pre id="pre1">
-        Your very own service, Origin
-        helps you get stuff done!
+Your very own service, Origin
+helps you get stuff done!
+      </pre
+        >
+      </section>
+
+      <section id="AboutUs">
+        <h1 id="header2">What do we do?</h1>
+        <pre id="pre2">
+Origin is a service that helps you
+do things in your life, such as doing
+things, watching things, and other things.
+      </pre
+        >
+      </section>
+
+      <section id="ExtraInfo">
+        <h1 id="header3">Extra Information</h1>
+        <pre id="pre3">
+We make stuff happen, such as things. Many things like
+things, things, and things all rely on Origin. Without Origin,
+things would not be possible. Over 0 companies use Origin
+to help them with their things.
       </pre
         >
       </section>

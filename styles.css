@@ -1,19 +1,183 @@
+:root {
+  --bg-color: rgb(255, 235, 205);
+  --text-color: rgb(150, 110, 80);
+}
+
 main {
   font-family:
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: rgb(221, 188, 147);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section #1 */
+
+#header1 {
+  font-size: 5ch;
+  margin: 1rem 0 0 0.25rem;
+  display: flex;
+  justify-content: center;
+  transition: font-size 250ms ease-in-out;
+}
+
+#header1:hover {
+  animation: hoverExpandHeader 250ms forwards;
 }
 
 #pre1 {
-  font-size: 100px;
+  font-size: 4ch;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Section #2 */
+
+#header2 {
+  font-size: 5ch;
+  margin: 1rem 0 0 0.25rem;
+  display: flex;
+  justify-content: center;
+  transition: font-size 250ms ease-in-out;
+}
+
+#header2:hover {
+  animation: hoverExpandHeader 250ms forwards;
+}
+
+#pre2 {
+  font-size: 4ch;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Section #3 */
+
+#header3 {
+  font-size: 5ch;
+  margin: 1rem 0 0 0.25rem;
+  display: flex;
+  justify-content: center;
+  transition: font-size 250ms ease-in-out;
+}
+
+#header3:hover {
+  animation: hoverExpandHeader 250ms forwards;
+}
+
+#pre3 {
+  font-size: 4ch;
+  padding: 1rem 0.5rem 0.5rem 1rem;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Navigation Bar */
+
+nav {
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
-  font-size: large;
   list-style: none;
   padding: 5px;
   margin: 0;
   display: flex;
-  gap: 1ch;
+  gap: 3ch;
+}
+
+nav ul a {
+  font-size: 3ch;
+  transition: font-size 250ms ease-in-out;
+}
+
+nav ul a:hover {
+  font-size: 3.5ch;
+}
+
+/* Cool Animations */
+
+@keyframes hoverExpand {
+  0% {
+    font-size: 3ch;
+  }
+  10% {
+    font-size: 3.05ch;
+  }
+  20% {
+    font-size: 3.1ch;
+  }
+  30% {
+    font-size: 3.15ch;
+  }
+  40% {
+    font-size: 3.2ch;
+  }
+  50% {
+    font-size: 3.25ch;
+  }
+  60% {
+    font-size: 3.3ch;
+  }
+  70% {
+    font-size: 3.35ch;
+  }
+  80% {
+    font-size: 3.4ch;
+  }
+  90% {
+    font-size: 3.45ch;
+  }
+  100% {
+    font-size: 3.5ch;
+  }
+}
+
+@keyframes hoverExpandHeader {
+  0% {
+    font-size: 5ch;
+  }
+  10% {
+    font-size: 5.05ch;
+  }
+  20% {
+    font-size: 5.1ch;
+  }
+  30% {
+    font-size: 5.15ch;
+  }
+  40% {
+    font-size: 5.2ch;
+  }
+  50% {
+    font-size: 5.25ch;
+  }
+  60% {
+    font-size: 5.3ch;
+  }
+  70% {
+    font-size: 5.35ch;
+  }
+  80% {
+    font-size: 5.4ch;
+  }
+  90% {
+    font-size: 5.45ch;
+  }
+  100% {
+    font-size: 5.5ch;
+  }
 }
